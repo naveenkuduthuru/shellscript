@@ -1,4 +1,4 @@
-#!/bin/sbin
+#!/bin/bash
 
 DATE=$(date)
 
