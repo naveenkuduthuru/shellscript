@@ -3,4 +3,4 @@
 
 FRUTS=("apple","banana","mango")
 
-echo  "first value :${FRUTS[0]}
+echo  "first value :${FRUTS[0]}"
