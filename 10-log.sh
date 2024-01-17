@@ -3,6 +3,8 @@ ID=$(id -u)
 TIMESTAMP=$(date +%F-%H-%M-%S)
 echo "script name :$0"
 
+LOGFILE="/tmp/$0-$TIMESTAMP.log"
+
 VALIDATE(){
 
      if [ $1 -ne 0 ]
