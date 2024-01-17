@@ -1,5 +1,6 @@
 ID=$(id -u)
 
+TIMESTAMP=$(date +%F-%H-%M-%S)
 echo "script name :$0"
 
 VALIDATE(){
@@ -24,8 +25,8 @@ then
 
   yum install mysql -y
 
-VALIDATE $? "installing MySQL"
+VALIDATE $? "installing MySQL"  &>> $LOGFILE
   
   yum install git -y
 
-  VALIDATE $? "installing GIT"
+  VALIDATE $? "installing GIT"   &>> $LOGFILE
