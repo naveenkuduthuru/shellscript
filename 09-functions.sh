@@ -22,7 +22,7 @@ then
   else 
   echo "you are root user"
   fi
-y
+
   yum install mysql - 
 
 VALIDATE
